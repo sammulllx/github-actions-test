@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Actions Test</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f6f3ea;
+        --card: #fffdf7;
+        --text: #1f1a12;
+        --accent: #1f7a5c;
+        --border: #d8cfbc;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+        background:
+          radial-gradient(circle at top left, #fff6d9, transparent 28%),
+          linear-gradient(160deg, var(--bg), #efe8d8);
+        color: var(--text);
+        font-family: Georgia, "Times New Roman", serif;
+      }
+
+      main {
+        width: min(720px, 100%);
+        padding: 40px;
+        border: 1px solid var(--border);
+        border-radius: 24px;
+        background: var(--card);
+        box-shadow: 0 20px 60px rgba(40, 28, 10, 0.12);
+      }
+
+      h1 {
+        margin: 0 0 16px;
+        font-size: clamp(2rem, 5vw, 3.8rem);
+        line-height: 1.05;
+      }
+
+      p {
+        margin: 0 0 14px;
+        font-size: 1.1rem;
+        line-height: 1.7;
+      }
+
+      .tag {
+        display: inline-block;
+        margin-bottom: 18px;
+        padding: 6px 12px;
+        border-radius: 999px;
+        background: #e7f3ee;
+        color: var(--accent);
+        font-size: 0.9rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="tag">GitHub Pages</div>
+      <h1>GitHub Actions 自动部署成功</h1>
+      <p>这个页面由 GitHub Actions 自动发布到 GitHub Pages。</p>
+      <p>当代码进入 <code>main</code> 分支，并且测试通过后，部署流程会自动运行。</p>
+    </main>
+  </body>
+</html>
